@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/gitkyo/frontnode/issues"
   },
-  "homepage": "https://github.com/gitkyo/frontnode#readme"
+  "engines": {
+    "node": "16.x"
+  },
+  "homepage": "https://github.com/gitkyo/frontnode#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
