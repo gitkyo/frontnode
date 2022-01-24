@@ -4,11 +4,15 @@ const PORT = process.env.PORT || 5000
 
 
 
-app.get('/', function (req, res) {
-  res.send('Hello World')
+app.get('', (req, res)=>{
+    res.send(`
+        <h1>Hello World</h1>
+        <br/>        `
+    )
 })
 
-express()
+
+app
 //   .use(express.static(path.join(__dirname, 'public')))
 //   .set('views', path.join(__dirname, 'views'))
 //   .set('view engine', 'ejs')
