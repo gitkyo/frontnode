@@ -2,11 +2,12 @@
   "name": "frontnode",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "build": "npm install",
     "start": "node app.js",
-    "dev" : "nodemon app.js"   
+    "dev": "nodemon app.js -e hbs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/gitkyo/frontnode#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "hbs": "^4.2.0"
   }
 }
