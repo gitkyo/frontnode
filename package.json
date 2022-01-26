@@ -7,7 +7,8 @@
   "scripts": {
     "build": "npm install",
     "start": "node app.js",
-    "dev": "nodemon app.js -e hbs"
+    "dev": "nodemon app.js -e js,hbs",
+    "watch" : "less-watch-compiler public/less/ public/css/"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,13 @@
   },
   "homepage": "https://github.com/gitkyo/frontnode#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "express": "^4.17.2",
     "hbs": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0"
+    "eslint": "^8.7.0",
+    "less": "^4.1.2",
+    "less-watch-compiler": "^1.16.3"
   }
 }

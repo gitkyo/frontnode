@@ -13,9 +13,13 @@ const publishDirectoryPath = path.join(__dirname, "/public");
 const viewsPath = path.join(__dirname, "/templates/views");
 const partialsPath = path.join(__dirname, "templates/partials");
 
-
-const app = express();
+const app = express(); 
 const PORT = 3000;
+
+//import bootstrap
+app.use("/css", express.static(path.join(__dirname, "/node_modules/bootstrap/dist/css")));
+app.use("/js", express.static(path.join(__dirname, "/node_modules/bootstrap/dist/js")));
+app.use("/js", express.static(path.join(__dirname, "/node_modules/jquery/dist")));
 
 //on indique qu'on utilise le format hbs comme template engine
 app.set("view engine", "hbs");

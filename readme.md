@@ -3,10 +3,13 @@
 # get started
 > npm install
 
-# for prod
+# build on prod
 > npm run build
 
-# for dev 
+# run for dev 
 > npm run dev
+
+# use less watch
+> npm run watch
 
 > http://floating-dawn-55326.herokuapp.com/
