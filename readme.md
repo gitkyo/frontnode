@@ -4,7 +4,7 @@
 > npm install
 
 # build on prod
-> npm run build
+> npm run build 
 
 # run for dev 
 > npm run dev
